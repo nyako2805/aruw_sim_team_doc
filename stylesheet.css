@@ -1,0 +1,48 @@
+.side-navigation {
+    width: 200px;
+    height: 680px;
+    overflow-y: auto;
+}
+
+.side-navigation a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.side-navigation a:hover {
+    background-color: #ccc;
+}
+
+.side-navigation a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.category {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+a {
+    font-size: 12pt;
+}
+
+.description {
+    text-indent: 2%;
+}
+
+.documentation {
+    justify-content: flex-end;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.not-clear {
+    background-color: violet;
+}
