@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        ARUW Simulation Team Documentation
+    </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>
+            ARUW Simulation Team Documentation
+        </h1>
+    </header>
+    <main>
+        <div class="side-navigation">
+            <script src="sidenav.ts"></script>
+        </div>
+        <div class="documentation">
+            <h2>BulletLife</h2>
+            <section class="summary">
+                The bullet life class determines how long the bullet exists on the field, before it is deleted.
+            </section>
+            <section id="fields">
+                <hr />
+                <section>
+                    <p>Timer</p>
+                    <!--Only including the public fields, the private fields will remain private-->
+                    <p class="description">GameObject Attacker</p>
+                    <!--This is just a guess-->
+                    <p class="description">The robot that fired the bullet (attacking robot)</p>
+                </section>
+            </section>
+            <section id="methods">
+                <section>
+                    <hr />
+                    <h3>Awake()</h3>
+                    <p class="description">???</p>
+                </section>
+                <section>
+                    <hr />
+                    <h3>Update()</h3>
+                    <!--Is it five seconds, or is it some other unit of measurement?-->
+                    <p class="description">Destroys the bullet five seconds after it has been fired.</p>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
