@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        ARUW Simulation Team Documentation
+    </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="dog_face.png" alt="Dog Face Image" id="aruw-logo" />
+        <a href="ARUW_Documentation.html" id="header">
+            ARUW Simulation Team Documentation
+        </a>
+    </header>
+    <main>
+        <div class="side-navigation">
+            <script src="sidenav.ts"></script>
+        </div>
+        <div class="documentation">
+            <h2>BulletLife</h2>
+            <section class="summary">
+                <p>The bullet life class determines how long the bullet exists on the field, before it is deleted.</p>
+            </section>
+            <section id="fields">
+                <h3>Fields</h3>
+                <hr />
+                <section>
+                    <h4>Timer</h4>
+                    <!--Only including the public fields, the private fields will remain private-->
+                    <p class="description">GameObject Attacker</p>
+                    <!--This is just a guess-->
+                    <p class="description">The robot that fired the bullet (attacking robot)</p>
+                </section>
+            </section>
+            <section id="methods">
+                <h3>Methods</h3>
+                <hr />
+                <section>
+                    <h4>Awake()</h4>
+                    <p class="description">???</p>
+                </section>
+                <section>
+                    <h4>Update()</h4>
+                    <!--Is it five seconds, or is it some other unit of measurement?-->
+                    <p class="description">Destroys the bullet five seconds after it has been fired.</p>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
