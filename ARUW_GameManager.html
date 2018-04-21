@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        ARUW Simulation Team Documentation
+    </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="dog_face.png" alt="Dog Face Image" id="aruw-logo" />
+        <a href="ARUW_Documentation.html" id="header">
+            ARUW Simulation Team Documentation
+        </a>
+    </header>
+    <main>
+        <div class="side-navigation">
+            <script src="sidenav.ts"></script>
+        </div>
+        <div class="documentation">
+            <h2>GameManager</h2>
+            <section class="summary not-clear">
+                <p>??? Something less obvious and more descriptive than "it manages the game"</p>
+            </section>
+            <hr />
+            <section id="fields">
+                <h3>Fields</h3>
+                <hr />
+                <section>
+                    <h4>m_NumRoundsToWin</h4>
+                    <p class="description type">int</p>
+                    <p class="description">The number of rounds a team must win to win the game.  Set by default to 5.</p>
+                </section>
+                <section>
+                    <h4>m_startDelay</h4>
+                    <p class="description type">float</p>
+                    <p class="not-clear description">???</p>
+                </section>
+                <section>
+                    <h4>m_EndDelay</h4>
+                    <p class="description type">float</p>
+                    <p class="not-clear description">???</p>
+                </section>
+                <section>
+                    <h4>m_CameraControl</h4>
+                    <p class="description type">CameraControl</p>
+                    <p class="not-clear description">???</p>
+                </section>
+                <section>
+                    <h4>HeroPrefab</h4>
+                    <p class="description type">GameObject</p>
+                    <p class="not-clear description">???</p>
+                </section>
+                <section>
+                    <h4>SoldierPrefab</h4>
+                    <p class="description type">GameObject</p>
+                    <p class="not-clear description">???</p>
+                </section>
+                <section>
+                    <h4>EngineerPrefab</h4>
+                    <p class="description type">GameObject</p>
+                    <p class="not-clear description">???</p>
+                </section>
+                <section>
+                    <h4>m_Tanks</h4>
+                    <p class="description type">List&lt;TankManager&gt;</p>
+                    <p class="not-clear description">???</p>
+                </section>
+                <section>
+                    <h4>playerEntries</h4>
+                    <p class="description type">Dictionary&lt;uint, PlayerEntry&gt;</p>
+                    <p class="not-clear description">???</p>
+                </section>
+                <section>
+                    <h4>baseHealth</h4>
+                    <p class="description type">int</p>
+                    <p class="not-clear description">The amount of health in the base.  Starts out with a default value of 10,000.</p>
+                </section>
+                <section>
+                    <h4>m_BaseHealth</h4>
+                    <p class="description type">SyncListInt</p>
+                    <p class="not-clear description">???</p>
+                </section>
+            </section>
+            <section id="methods">
+                <h3>Methods</h3>
+                <hr />
+                <section>
+                    <h4>GetCountdown()</h4>
+                    <p class="description">Returns the current state of the countdown, or the amount of time left in the game.  </p>
+                </section>
+                <section>
+                    <h4>InitServer()</h4>
+                    <p class="description not-clear">???</p>
+                </section>
+                <section>
+                    <h4>OnReceiveConnectData(NetworkMessage netMsg)</h4>
+                    <p class="description not-clear">???</p>
+                </section>
+                <section>
+                    <h4>SpawnClient(NetworkConnection conn, int selectedClass, int selectedTeam)</h4>
+                    <p class="description not-clear">???</p>
+                </section>
+                <section>
+                    <h4>OnPlayerConnect(NetworkMessage netMsg)</h4>
+                    <p class="description not-clear">???</p>
+                </section>
+                <section>
+                    <h4>OnPlayerDisconnect(NetworkMessage netMsg)</h4>
+                    <p class="description not-clear">???</p>
+                </section>
+                <section>
+                    <h4>OnPlayerError(NetworkMessage netMsg)</h4>
+                    <p class="description not-clear">???</p>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

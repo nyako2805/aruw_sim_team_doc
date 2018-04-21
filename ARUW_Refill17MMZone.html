@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        ARUW Simulation Team Documentation
+    </title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="dog_face.png" alt="Dog Face Image" id="aruw-logo" />
+        <a href="ARUW_Documentation.html" id="header">
+            ARUW Simulation Team Documentation
+        </a>
+    </header>
+    <main>
+        <div class="side-navigation">
+            <script src="sidenav.ts"></script>
+        </div>
+        <div class="documentation">
+            <h2>Refill17MMZone</h2>
+            <section class="summary">
+                <p>The refill 17mm zone class refills the robots using 17mm ammunition at a set rate, based off of the distance of the robot from the zone.</p>
+            </section>
+            <hr />
+            <section id="fields">
+                <h3>Fields</h3>
+                <hr />
+                <section>
+                    <h4>RefillInterval</h4>
+                    <p class="description type">int</p>
+                    <p class="not-clear description">The amount of time the tank has to wait before being refilled.  Set to 1000 milliseconds by default.</p>
+                </section>
+                <section>
+                    <h4>RefillAmount</h4>
+                    <p class="description type">int</p>
+                    <p class="description">The amount of ammo added to the tank, once refilled.  Set to 10 bullets by default.</p>
+                </section>
+                <section>
+                    <h4>team</h4>
+                    <p class="description type">int</p>
+                    <p class="not-clear description">The assigned team of the refill zone.</p>
+                </section>
+            </section>
+            <section id="methods">
+                <h3>Methods</h3>
+                <hr />
+                <section>
+                    <h4>Start()</h4>
+                    <p class="description">Is called when the game begins.  Activates the refill zone.</p>
+                </section>
+                <section>
+                    <h4>Update()</h4>
+                    <p class="description">Refills the robots using 17MM bullets surrounding the refill zone.  This method is called every second.</p>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
