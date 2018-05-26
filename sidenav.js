@@ -1,6 +1,6 @@
 // JavaScript source code
 
-document.write('\
+document.querySelector("side-navigation").write('\
 \
     <div class="side-navigation">\
         <a href="" class="category">Bullet</a>\
